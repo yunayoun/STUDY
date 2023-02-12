@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    background: #1d2026;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+nav .logo{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    /* 나머지부분 다 차지 */
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 1rem;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    background: #efefef;
+    border-radius: 2rem;
+    width: 2.5rem;
+    height: 1.2rem;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background .5s;
+}
+button span{
+    display: block;
+    background: #999;
+    height:1.2rem ;
+    width: 1.2rem;
+    border-radius: 50%;
+    margin-left: .1rem;
+    transition: background .5s , margin-left .5s ;
+
+}
+.lamp-container{
+    position: relative;
+}
+.lamp-container img{
+    width: 50%;
+    height: 91.3vh;
+}
+.lamp{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.dark{
+    position: absolute;
+}
+
+.text-container{
+    position: absolute;
+    max-width: 600px;
+    top: 26%;
+    left: 55%;
+    color: #fff;
+}
+.text-container h1{
+font-size: 5rem;
+font-weight:400;
+margin-bottom: 2rem;
+
+}
+.text-container a{
+    text-decoration: none;
+    background: #537846;
+    padding: 1rem 3rem;
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 2rem;
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10rem; 
+}
+.control .line{
+    width: 15rem;
+    height: .3rem;
+    background: #fff;
+    margin: 0 1rem;
+    border-radius: 2px;
+}
+.control .line span{
+    width: 50%;
+    height: .6rem;
+    margin-top: -2px;
+    border-radius: 4px;
+    background: #537846;
+    display: block;
+}
+.active{
+    background: green;
+}
+.active span{
+    /* background: #fff; */
+    margin-left: 1.2rem;
+}
+.on{
+    opacity: 1;
+    transition: opacity .5s;
+}
