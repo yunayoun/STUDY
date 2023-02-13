@@ -1,0 +1,96 @@
+
+body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    line-height: 1;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: initial;
+}
+
+#order_warp{
+    margin:0 auto;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* #order_warp .left{} */
+#order_warp .left img{
+    width: 700px;
+    height: 700px;
+}
+#order_warp .right{
+    width: calc(100% - 800px);
+}
+/* #order_warp .right .top{} */
+#order_warp .right .top h1{font-size: 1.2rem; padding: 20px 0;}
+#order_warp .right .top>p:nth-child(2){
+    color: #aaa;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dadadd;
+}
+#order_warp .right .top dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+#order_warp .right .top dl dt{width: 30%;padding: 10px 0;}
+#order_warp .right .top dl dd{width: 60%;padding: 10px 0;}
+#order_warp .right .top dl dd.price{font-weight: 700;}
+#order_warp .right .top .number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+/* #order_warp .right .top .number .order_name{} */
+/* #order_warp .right .top .number .order_number{} */
+#order_warp .right .top .number .order_number input[name=num]{
+    background-color: #fff;
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+#order_warp .right .top .total_price{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+/* #order_warp .right .top .total_price p{} */
+/* #order_warp .right .top .total_price p:nth-child(1){} */
+#order_warp .right .top .total_price .result_price{
+    color: red;
+    font-size: 1.2rem;
+}
+#order_warp .right .bottom{
+    text-align: right;
+    padding: 20px 0;
+}
+#order_warp .right .bottom button{
+    padding: 15px 0;
+}
+#order_warp .right .bottom #order_btn{width:150px; background-color: green; color: #fff;  cursor: pointer;}
+#order_warp .right .bottom #order_btn:hover{background-color: rgb(128, 170, 65);}
+#order_warp .right .bottom #cart_btn{width: 130px; background-color: whitesmoke;  cursor: pointer;}
+#order_warp .right .bottom #like_btn{width: 100px; background-color: wheat;  cursor: pointer;}
+
+
+@media (max-width:1400px) {
+    #order_warp .right{
+        width: 100%;
+        margin-top: 30px;
+    }
+}

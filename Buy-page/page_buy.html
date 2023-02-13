@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스터</title>
+    <link rel="stylesheet" href="page_buy.css">
+</head>
+<body>
+    <main id="order_warp"> 
+        <div class="left">
+                <img src="../img/paintArt.jpg">
+        </div>
+        <div class="right">
+            <div class="top">
+                <h1>인테리어 포스터</h1>
+                <p>돈 들어오는 대박그림</p>
+                <dl>
+                    <dt>판매가격</dt>
+                    <dd class="price"></dd>
+                    <dt>적립금</dt>
+                    <dd>1%</dd>
+                    <dt>원산지</dt>
+                    <dd>대한민국</dd>
+                </dl>
+                <div class="number">
+                    <p class="order_name">인테리어포스터</p>
+                    <div class="order_number">
+                        <input type="number" name="num" id="num" min="1">
+                        <span class="number_price"></span>
+                    </div>
+                </div>
+                <div class="total_price">
+                    <p>총 상품금액</p>
+                    <p class="result_price"></p>
+                </div>
+            </div>
+            <div class="bottom">
+                <button type="button" id="order_btn">주문하기</button>
+                <button type="button" id="cart_btn">장바구니</button>
+                <button type="button" id="like_btn">찜하기</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const pay1 = document.querySelector('.price')
+        const pay2 = document.querySelector('.number_price')
+        const money = 3000
+        pay1.innerHTML = `${money}원`
+        pay2.innerHTML = `${money}원`
+
+        const order_Btn = document.querySelector('#order_btn');
+        const amount = document.querySelector('#num');
+        const whole_price = document.querySelector('.result_price');
+
+        function buy_Btn(){
+            let price = amount.value * money;
+            whole_price.innerHTML = `${price}원`
+        }
+        order_Btn.addEventListener('click',buy_Btn);
+    </script>
+</body>
+</html>
