@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone trip</title>
+    <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="clonetrip.css">
+    <!-- jquery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#service">service</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class ='fas fa-search' id="search-btn"></i>
+            <i class ='fas fa-user' id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here..">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+<!-- login -->
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="email here">
+            <input type="password" class="box" placeholder="password here">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password?<a href="#">click here</a></p>
+            <p>don't you have an account?<a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>adventure is worthwhile</h3>
+            <p>discover new places with us,adventure awits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn" data-src="img/vid1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid1.mp4"></span>
+            <span class="vid-btn" data-src="img/vid1.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="img/vid1.mp4" id="video-slider" loop autoplay muted></video>
+            <!-- video>>loop=반복재생/muted=음소거 autoplay=로드되면바로실행 -->
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="img/earth.jpeg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="text" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="date" placeholder="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>where to</h3>
+                    <input type="date" placeholder="place name">
+                </div>
+                <input type="button" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+                <p>dfskjdlksjlfksjdkjf</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$100<span>$120</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+                <p>dfskjdlksjlfksjdkjf</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$100<span>$120</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>mumbai</h3>
+                <p>dfskjdlksjlfksjdkjf</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$100<span>$120</span></div>
+                <a href="#" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service" id="service">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>sdkjslkjfklsj</h3>
+            <p>dkjslkjdksjkldjfksj</p>
+        </div>
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3>amdlksjfdkjsk</h3>
+                <p>dksjkldjksjkldfjskjdkfj</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3>amdlksjfdkjsk</h3>
+                <p>dksjkldjksjkldfjskjdkfj</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3>amdlksjfdkjsk</h3>
+                <p>dksjkldjksjkldfjskjdkfj</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="img/dog1.jpeg" alt="">
+            <div class="content">
+                <h3>amdlksjfdkjsk</h3>
+                <p>dksjkldjksjkldfjskjdkfj</p>
+                <a href="#" class="btn">see more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="img/dog1.jpeg" alt="">
+                    <h3>john han</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deleniti, cum dolor vel itaque consequuntur optio!
+                    Molestias accusantium minima quaerat dolore corporis ad,
+                    qui magni nostrum cumque sit sed quia similique.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="img/dog1.jpeg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="email" placeholder="submit">
+            </div>
+            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send msg">
+        </form>
+    </div>
+</section>
+
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/like.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/like.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/like.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/like.png" alt=""></div>
+            <div class="swiper-slide"><img src="img/like.png" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint accusamus
+            deleniti voluptates blanditiis excepturi laudantium minus atque libero voluptas i</p>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<!-- js -->
+<script src="clonetrip.js"></script>
+</body>
+</html>
