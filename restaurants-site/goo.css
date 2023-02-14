@@ -1,0 +1,385 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    object-fit: cover;
+}
+.header_img{
+position: absolute;
+top: -300px;
+z-index: -1;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vh 10vw;
+}
+.nav a{
+    color: black;
+    text-decoration: none;
+}
+.nav h4{
+    cursor: pointer;
+}
+.nav_bar{
+    display: flex;
+}
+.nav_bar li{
+    padding-left: 30px;
+    list-style:none;
+    cursor: pointer;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+.logo{
+    width: 30vw;
+}
+.search{
+display: flex;
+width: 55vw;
+/* justify-content: flex-start; */
+align-items: center;
+background-color: white;
+border-radius: 10px;
+padding: 5px 0;
+}
+.search input{
+outline: none;
+border: none;
+width: 50%;
+padding-left: 10px;
+}
+.search p{
+    border-right: 1px solid gray;
+    padding-right: 10px;
+    color: gray;
+
+}
+.search i:first-child{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: pink;
+}
+.search i{
+    padding-left:10px;
+    color: gray;
+}
+.sec-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13vh;
+}
+.box{
+    position: relative;
+    width: 250px;
+    margin: 15px 5px;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 1px 2px gray;
+}
+.box img{
+    width: 100%;
+    border-radius: 15px;
+    border: 1px solid gray;
+    /* z-index: -1; */
+}
+.white{
+    position: absolute;
+    bottom: 3px;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    /* z-index: 2; */
+    height: 20%;
+    background-color: white;
+}
+.white:hover{
+    box-shadow: 0px 15px 36px 0px rgba(69,59,59,0.75);
+    -webkit-box-shadow: 0px 15px 36px 0px rgba(69,59,59,0.75);
+    -moz-box-shadow: 0px 15px 36px 0px rgba(69,59,59,0.75);
+}
+.white p{
+    text-align: center;
+    color: gray;
+    letter-spacing: 1px;
+}
+
+.middle {
+    margin: 50px 150px;
+}
+.sec-2 h2{
+    margin-bottom: 10px;
+}
+.sec-2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sec-2 h6{
+    margin: 0;
+    color: gray;
+    font-size: 1rem;
+}
+.fa-caret-right, .sec-2 span{
+    color: pink;
+}
+.box-1{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius:8px;
+    cursor: pointer;
+}
+.box-1 div{
+    position: absolute;
+    background:linear-gradient(transparent,black);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+}
+.box-1 div span:first-child{
+    display: inline-block;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color: white;
+}
+.box-1 i{
+    color: white;
+    padding-bottom: 15px;
+}
+/* .box-1 img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+} */
+.sec-2 span{
+    cursor: pointer;
+}
+.sec-3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+.middle h1{
+    text-align: center;
+    margin: 50px;
+}
+.sec-4{
+    display: grid;
+    justify-content: center;
+    gap: 20px 30px;
+    grid-template-columns: 340px 340px;
+    grid-template-rows: auto;
+}
+.box-2{
+    border: 1px solid white;
+    box-shadow: 0 1px 2px gray;
+    width: 340px;
+    height: 50px;
+    /* overflow: hidden; */
+    border-radius: 10px;
+}
+.box-2:hover{
+    box-shadow: -7px 2px 18px 1px rgba(112,101,101,0.75);
+    -webkit-box-shadow: -7px 2px 18px 1px rgba(112,101,101,0.75);
+    -moz-box-shadow: -7px 2px 18px 1px rgba(112,101,101,0.75);
+}
+.box-2 div{
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.box-2 div span{
+    color: gray;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 줄넘으면 ...으로 */
+    white-space: nowrap;
+    /* 줄넘어도 한줄로..줄바꿈x */
+}
+.sec-5{
+    display: flex;
+    justify-content: center;
+    /* justify 쓰려면 flex필요 */
+    background-color: beige;
+    margin: 90px 0;
+    padding: 40px 0;
+}
+.flex{
+    display: flex;
+}
+.contact{
+    width: 750px;
+    overflow: hidden;
+}
+.contact img{
+    width: 250px;
+    height: 400px;
+    padding-right: 40px;
+}
+.address{
+    width: 470px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.address h2{
+    margin-bottom: 20px;
+}
+.address p{
+    padding-bottom: 10px;
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 250px;
+    padding-bottom: 20px;
+}
+/* .radio label{
+    color: blue;
+} */
+.radio [type ='radio']{
+    accent-color:yellow;
+}
+.email{
+    position: relative;
+}
+.email input{
+    height: 45px;
+    border-radius: 5px;
+    width: 270px;
+    border: 1px solid white;
+    /* outline: orange; */
+    padding-left: 15px;
+}
+.place{
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    color: gray;
+}
+.email button{
+    width: 150px;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.download{
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: gray;
+}
+.app img{
+    width: 130px;
+    height: 40px;
+}
+.sec-6{
+    margin-bottom: 100px;
+}
+.end {
+    margin: 50px 150px;
+}
+/* .sec-6 h1{
+    font-size: 1.5rem;
+} */
+.sec-6 h4{
+    margin-bottom: 25px;
+    color:darkcyan;
+}
+.sec-6 a{
+    text-decoration: none;
+    color: gray;
+}
+.sec-6 i{
+    font-size: 0.3rem;
+    color: gray;
+    padding: 5px;
+}
+.end-column a{
+    display: inline-block;
+    width: 95px;
+    margin: 15px 0;
+}
+.first img{
+width: 170px;
+height: 30px;
+}
+.sec-7{
+    padding: 40px 120px;
+    background-color: antiquewhite;
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+.first-1{
+    display: flex;
+}
+.first-1 span{
+    padding: 10px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.second{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+.second div{
+    width: 200px;
+}
+.second h4{
+    white-space: nowrap;
+}
+.second a{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: gray;
+    white-space: nowrap;
+}
+.second img{
+    width: 135px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.box-4{
+    display: flex;
+    flex-direction: column;
+}
+.box-4 i{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.third{
+    padding: 10px 0;
+    color: gray;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
