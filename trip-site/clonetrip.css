@@ -438,7 +438,9 @@ section{
     text-align: center;
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
     border-radius: .5rem;
+    height: 400px;
 }
+
 .review .review-slider{
     padding-bottom: 2rem;
     overflow: hidden;
