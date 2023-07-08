@@ -15,10 +15,13 @@
                 <a href ='https://naver.com'><h4>Get the App</h4></a>
             </div>
             <ul class="nav_bar">
-                <li><a href ="#">Add Restaurant</a></li>
+                <li><a href ="#">company</a></li>
                 <li><a href ="#">Log In</a></li>
                 <li><a href ="#">Sign Up</a></li>
             </ul>
+            <a href="#" class="navbar-toggle active">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
         <div class="head">
             <img src="logo.png" alt="logo" class="logo">
@@ -35,6 +38,10 @@
         </div>
     </header>
     <section class="sec-1">
+        <div class="box">
+            <div class="white"><p>Order Online</p></div>
+            <img src="earth.jpeg" alt="">
+        </div>
         <div class="box">
             <div class="white"><p>Order Online</p></div>
             <img src="earth.jpeg" alt="">
@@ -246,10 +253,10 @@
                 </div>
                 <div class="box-4">
                     <h4>social links</h4>
-                    <div>
-                        <i class="fab fa-facebook"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
+                    <div class="social-link">
+                        <a><i class="fab fa-facebook"></i></a>
+                        <a><i class="fab fa-twitter"></i></a>
+                        <a><i class="fab fa-instagram"></i></a>
                     </div>
                     <img src="logo.png" alt="logo">
                     <img src="logo.png" alt="logo">
@@ -267,9 +274,13 @@
         const coll_img1 = document.querySelector('.coll_img1');
         const coll_img2 = document.querySelector('.coll_img2');
         const coll_img3 = document.querySelector('.coll_img3');
-        
-        console.log(coll_img1)
+        const navbarToggle = document.querySelector('.navbar-toggle');
 
+        navbarToggle.addEventListener('click',()=>{
+            document.querySelector('.nav_bar').classList.toggle('active')
+            
+        })
+        
         function remove_link(){
             window.open('#')
         }

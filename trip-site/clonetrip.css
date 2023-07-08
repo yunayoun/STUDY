@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito:wght@300;700&display=swap');
 
 :root{
-    --orange:#ffa500;
+    --orange:#F2AA4C;
 }
 *{
     font-family: 'Nunito', sans-serif;
@@ -101,6 +101,7 @@ body{
     height: 200rem;
 }
 
+
 .login-form-container{
     position: fixed;
     top: 120%;
@@ -177,6 +178,15 @@ body{
     color: #333;
     text-decoration: underline;
 }
+.login-card.active{
+    display: none;
+}
+.register-card {
+    display: none;
+}
+.register-card.active {
+    display: block;
+}
 .login-form-container #form-close{
     position: absolute;
     top: 2rem;
@@ -244,7 +254,7 @@ section{
     position: relative;
     top: 10rem;
 }
-.home .controls .vid-btn{
+.home .controls .video-btn{
     display: inline-block;
     height: 2rem;
     width: 2rem;
@@ -254,13 +264,14 @@ section{
     cursor: pointer;
     margin: 0.5rem;
 }
-.home .controls .vid-btn.active{
+.home .controls .video-btn.active{
     background: var(--orange);
 }
 /* book */
 .heading{
     text-align: center;
     padding: 2.5rem 0;
+    margin-bottom:3rem;
 }
 .heading span{
     font-size: 3.5rem;

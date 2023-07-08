@@ -2,11 +2,24 @@ let searchBtn = document.querySelector('#search-btn');
 let searchBar = document.querySelector('.search-bar-container');
 let formBtn = document.querySelector('#login-btn');
 let loginForm = document.querySelector('.login-form-container');
+let switchLogin = document.querySelector('.switch-login');
+let switchRegister = document.querySelector('.switch-register');
+let loginCard = document.querySelector('.login-card');
+let registerCard = document.querySelector('.register-card');
 let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
-let videoBtn = document.querySelectorAll('.vid-btn');
+let videoBtn = document.querySelectorAll('.video-btn');
 
+
+switchLogin.addEventListener('click',()=>{
+    loginCard.classList.add('active');
+    registerCard.classList.add('active');
+});
+switchRegister.addEventListener('click',()=>{
+    loginCard.classList.remove('active');
+    registerCard.classList.remove('active');
+});
 
 searchBtn.addEventListener('click',()=>{
     searchBtn.classList.toggle('fa-times');

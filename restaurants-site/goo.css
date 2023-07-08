@@ -29,6 +29,10 @@ z-index: -1;
 }
 .nav_bar{
     display: flex;
+    margin-top: 20px;
+}
+.navbar-toggle{
+    display: none;
 }
 .nav_bar li{
     padding-left: 30px;
@@ -78,7 +82,7 @@ padding-left: 10px;
 .sec-1{
     display: flex;
     justify-content: center;
-    margin-bottom: 13vh;
+    margin: 6vh;
 }
 .box{
     position: relative;
@@ -309,6 +313,9 @@ padding-left: 10px;
 .sec-6 a{
     text-decoration: none;
     color: gray;
+    display: inline-block;
+    margin: 10px;
+    
 }
 .sec-6 i{
     font-size: 0.3rem;
@@ -347,14 +354,14 @@ height: 30px;
     margin: 30px 0;
 }
 .second div{
-    width: 200px;
+    width: 100px;
 }
 .second h4{
     white-space: nowrap;
 }
 .second a{
     display: inline-block;
-    width: 200px;
+    width: 100px;
     margin-bottom: 5px;
     text-decoration: none;
     color: gray;
@@ -370,9 +377,11 @@ height: 30px;
     display: flex;
     flex-direction: column;
 }
-.box-4 i{
-    margin-left: 5px;
-    margin-bottom: 5px;
+.social-link {
+display: flex;
+}
+.social-link>i{
+width: 20px;
 }
 .third{
     padding: 10px 0;
@@ -382,4 +391,102 @@ height: 30px;
 
 a:hover{
     text-decoration: underline;
+}
+
+
+@media(max-width:1200px){
+    .box-1 {
+        width: 250px;
+    }
+}
+@media(max-width:991px){
+    .box-1 {
+        width: 200px;
+    }
+    .sec-2 div {
+        display: block;
+    }
+    .second div {
+        margin-right: 25px;
+    }
+}
+@media(max-width:768px){
+.head{
+    margin-top: 7vh;
+}
+.sec-1{
+    display: block;
+    margin-left: 35%;
+}
+.sec-3{
+    display: block;
+    margin-left: 20%;
+}
+.box-1{
+    width: 280px;
+    margin-bottom: 20px;
+}
+.second{
+    display: block;
+}
+.nav a{
+    margin-top: 22px;
+}
+.nav_bar{
+    display: none;
+}
+.nav_bar.active{
+    display: block;
+    width: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 0;
+    left: 0;
+    text-align: center;
+    top: 50px;
+}
+.navbar-toggle{
+    display: block;
+}
+.nav_bar li {
+    padding-left: 0;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+}
+@media(max-width:600px){
+    header{
+        height: 45vh;
+    }
+    .sec-1{
+        margin-left: 20%;
+    }
+    .middle {
+        margin: 10px;
+    }
+    .search input::placeholder{
+        color: transparent;
+    }
+    .sec-3{
+        margin-left: 20%;
+    }
+    .sec-4 {
+        display: block;
+        margin-left: 10px;
+    }
+    .flex.contact{
+        display: block;
+        text-align: center;
+    }
+    .address{
+        padding: 0;
+        width: auto;
+    }
+    .end{
+        margin: 10px;
+    }
+    .sec-7{
+        padding: 20px;
+    }
+    
 }
