@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box">
+    <h1>ROCK SCISSORS PAPER</h1>
+    <button onclick='game()'>start</button>
+
+  </div>
+
+
+  <script>
+  
+  const choices= ['rock','scissors','paper']
+  const win = [];
+  
+    function game(){
+      for(let i =0; i<5;i++){
+        playerRound(i);
+      }
+      logWins();
+    }
+    function playerRound(round){
+      let palySelection = player();
+      let computerSelection = computer();
+      let winner = whoWinner(palySelection,computerSelection)
+      win.push(winner);
+      logRound(palySelection,computerSelection,winner,round)
+    }
+
+    function player(){
+      let input = prompt('choice rock, scissors or paper');
+      
+      while(input == 'null'){
+        input = prompt('choice rock, scissors or paper');
+      }
+      input = input.toLowerCase();
+      let check = checkInput(input);
+      
+      while(check ===false){
+        input = prompt('choice rock, scissors or paper');
+        let check = checkInput(input);
+        while(input == 'null'){
+          prompt('choice rock, scissors or paper');
+        }
+        input = input.toLowerCase();
+        check = checkInput(input);
+        }
+      return input;
+    };
+    function computer(){
+      return choices[Math.floor(Math.random()*choices.length)]
+    }
+    function checkInput(choice){
+      return choices.includes(choice);
+    }
+    function whoWinner(p,c){
+      if(p===c){
+        return 'tie'
+      }else if(
+        (p==='rock'&&c=='scissors')||
+        (p==='scissors'&&c=='rock')||
+        (p==='paper'&&c=='rock')){
+          return 'player'
+        }else{
+          return 'computer'
+        }
+    }
+    function logWins(){
+      let pWin = win.filter((item)=>item=='player').length;
+      let cWin = win.filter((item)=>item=='computer').length;
+      let tie = win.filter((item)=>item=='tie').length;
+      console.log('result:')
+      console.log('player win:',pWin);
+      console.log('computer win:',cWin);
+      console.log('tie:',tie);
+    }
+    function logRound(pChose,cChose,winner,round){
+      console.log('round:',round+1)
+      console.log('playerChose:',pChose);
+      console.log('computerChose:',cChose);
+      console.log('winner:',winner);
+    }
+    
+    
+
+  </script>
+</body>
+</html>

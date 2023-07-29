@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      box-sizing: border-box;
+      width: 100vw; 
+      height: 100vh;
+
+    }
+    .header,
+    .footer{
+      display: flex;
+      background-color: pink;
+      height: 7%;
+      width: 100%;
+      align-items: center;
+    }
+    .sec1,.sec2,.sec3,.sec4{
+      min-height: 22%;
+      width: 100%;
+    }
+    .sec1{
+      padding: 3% 15%;
+      width: 80%;
+    }
+    .headerlogo{
+      font-weight: 600;
+      font-size: x-large;
+      padding-left: 50px;
+    }
+    .links{
+      font-size: small;
+      padding-right: 50px;
+      font-weight: 500;
+      margin-left: auto;
+      color: red;
+    }
+    .hlink{
+      margin-right: 30px;
+    }
+    .h1{
+      text-decoration: none;
+      color: red;
+    }
+    .sec1{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: blue;
+      color: aliceblue;
+      box-shadow: 0px 3px 25px 0 black;
+    }
+    .s1Text{
+      width: 300px;
+      height: 255px;
+    }
+    .s1ImgDiv{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aliceblue;
+      border-radius: 10px;
+      width: 255px;
+      height: 255px;
+      margin-right: 35%;
+    }
+    .s1Img{
+      width: 250px;
+      height: 250px;
+      margin-right: 8px;
+    }
+    .s1h1{
+      font-weight: 700;
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+    .s1btn{
+      margin-top: 50px;
+      padding:10px 20px;
+      border-radius: 20px;
+      background-color: skyblue;
+    }
+    .s2h1{
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .b1container{
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: bisque;
+      transition: .5s;
+      cursor: pointer;
+    }
+    .b1container:hover{
+      width: 250px;
+      height: 250px;
+    }
+    .s2boximg{
+      width: 100px;
+      height: 100px;
+      border-radius: 5px;
+      border: 3px solid black;
+      transition: .5s;
+    }
+    .s2boximg:hover{
+      width: 250px;
+      height: 250px;
+      border: 3px solid black;
+    }
+    .boxes{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
+    .sec3{
+      margin-top: 70px;
+      background-color: aliceblue;
+      box-shadow: 0px 3px 25px 0 black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .s3h3{
+      max-width: 70%;
+      font-size: 20px;
+      font-weight: lighter;
+      font-style: italic;
+      color: black;
+    }
+    .s3h4{
+      max-width: 70%;
+      margin-left: auto;
+      font-weight: bold;
+      margin-right: 20%;
+    }
+    .s4box{
+      width: 50%;
+      border: 1px solid black;
+      min-height: 100px;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: blue;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .sec4{
+      padding-top: 70px;
+    }
+    .s4hs{
+      color: wheat;
+      font-weight: 700;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    .s4btn{
+      width: 120px;
+      height: 50px;
+      background-color: red;
+      border: 1.5px solid wheat;
+      color: white;
+      margin-right: 10px;
+      font-weight: 900;
+    }
+    .s4btn:hover{
+      cursor: pointer;
+      background-color: red;
+    }
+    .footer{
+      display: flex;
+      justify-content: center;
+      color: aliceblue;
+      font-weight: 700;
+      font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="headerlogo"><a class="h1">logologo</a></div>
+    <div class="links">
+      <span class="hlink"><a class="h1">link1</a></span>
+      <span class="hlink"><a class="h1">link2</a></span>
+      <span class="hlink"><a class="h1">link3</a></span>
+    </div>
+  </div>
+  <div class="sec1">
+    <div class="s1Text">
+      <h1 class="s1h1">this website is awesome</h1>
+      <h4 class="s1h4">sometext</h4>
+      <button class="s1btn">sign up</button>
+    </div>
+    <div class="s1ImgDiv">
+      <img src="" class="s1img" alt="placeholder">
+    </div>
+  </div>
+  <div class="sec2">
+    <h1 class="s2h1">this is random info</h1>
+    <div class="boxes">
+      <div class="box">
+        <div class="b1container">
+          <img src="" class="s2boximg" alt="">
+        </div>
+        <h5 class="b1info">placeholder text</h5>
+      </div>
+      <div class="box">
+        <div class="b1container">
+          <img src="" class="s2boximg" alt="">
+        </div>
+        <h5 class="b1info">placeholder text</h5>
+      </div>
+      <div class="box">
+        <div class="b1container">
+          <img src="" class="s2boximg" alt="">
+        </div>
+        <h5 class="b1info">placeholder text</h5>
+      </div>
+      <div class="box">
+        <div class="b1container">
+          <img src="" class="s2boximg" alt="">
+        </div>
+        <h5 class="b1info">placeholder text</h5>
+      </div>
+    </div>
+  </div>
+  <div class="sec3">
+    <h3 class="s3h3">quote</h3>
+    <h4 class="s3h4">-loki,god of dosd</h4>
+  </div>
+  <div class="sec4">
+    <div class="s4box">
+      <div class="s4hs">
+        <h3>dot't forget to like dlskjf</h1>
+        <h4>ksjdflkjskdjfkjkjk</h2>
+      </div>
+      <button class="s4btn">go subscribe</button>
+    </div>
+  </div>
+  <div class="footer">not really dlskjdkjfskjd  dlkjf</div>
+</body>
+</html>
